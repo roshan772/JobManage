@@ -34,7 +34,7 @@ public class JobController {
 
         Page<JobDTO> jobPage = jobService.getAllJobs(PageRequest.of(page, size));
         return new PaginatedResponse<>(jobPage);
-    }
+    }//completed
 
 
     @DeleteMapping("delete/{id}")
